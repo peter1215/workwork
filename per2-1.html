@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<style type="text/css">
+		@import "per2.css";
+	</style>
+	</head>
+	<body>
+		<section class="a1">
+			<h4 class="a3">個人經歷</h4>
+			<div class="timeline">
+				<div class="container left">
+					<div class="content">
+						<h2>國小</h2>
+						<p class="a4">就讀建國國小</p>
+					</div>
+				</div>
+				<div class="container right">
+					<div class="content">
+						<h2>國中</h2>
+						<p class="a4">就讀福豐國中</p><br>
+						<p class="a4">曾參加全國音樂比賽個人組甲等</p>
+					</div>
+				</div>
+				<div class="container left">
+					<div class="content">
+						<h2>高中</h2>
+						<p class="a4">就讀振聲高中</p>
+					</div>
+				</div>
+				<div class="container right">
+					<div class="content">
+						<h2>大一上</h2>
+						<p class="a4">就讀國防大學</p>
+					</div>
+				</div>
+				<div class="container left">
+					<div class="content">
+						<h2>大一下</h2>
+						<p class="a4">就讀中原大學</p>
+						<p class="a4">參與企業概論課程專題實作，擔任組長</p>
+					</div>
+				</div>
+				<div class="container right">
+					<div class="content">
+						<h2>大二上</h2>
+						<p class="a4">就讀中原大學</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="a1">
+			<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
+			<h1 class="animated infinite bounce">個人基本資訊</h1>
+			<button class="a2">基本資料</button>
+			<div class="p">
+				<p class="a4">姓名:徐世寰</p><br>
+				<p class="a4">生日:881215</p><br>
+				<p class="a4">性別:男</p><br>
+				<p class="a4">科系:資訊管理</p><br>
+				<p class="a4">學歷:建國國小、福豐國中、振聲高中、中原大學</p><br>
+				<p class="a4">個人格言:突破逆境，勇往直前</p><br>
+			</div>
+		</section>
+		<section class="a1">
+			<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
+			<h2 class="animated infinite shake">個人聯絡資訊</h2>
+			<button class="a2">聯絡資料</button>
+			<div class="p">
+				<p>手機:0903577980</p><br>
+				<a  class="a3" href="https://www.facebook.com/profile.php?id=100011226121896">facebook</a><br>
+				<a  class="a3" href="https://www.instagram.com/?hl=zh-tw">instagram</a><br>
+				<a  class="a3" href="https://peter1215.github.io">個人網站</a>
+			</div>
+		</section>
+		<script>
+		var acc = document.getElementsByClassName("a2");
+		var i;
+		for (i = 0; i < acc.length; i++) {
+		acc[i].addEventListener("click", function() {
+		this.classList.toggle("a2");
+		var p = this.nextElementSibling;
+		if (p.style.display === "block") {
+		p.style.display = "none";
+		} else {
+		p.style.display = "block";
+		}
+		});
+		}
+		</script>
+		<section class="a1">
+			<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
+			<h3 class="animated infinite flash">個人專業技能百分比</h3>
+			<div class="container">
+				<h1>百分比</h1>
+				<div class="bar learning" data-skill="c++"></div>
+				<div class="bar back basic" data-skill="java"></div>
+				<div class="bar back intermediate" data-skill=".net"></div>
+				<div class="bar front advanced" data-skill="CSS3"></div>
+				<div class="bar front expert" data-skill="HTML5"></div>
+			</div>
+		</section>
+		
+	</body>
+</html>
